@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const apiKEY = "b9543425f8c6abba5d47a0427007a82b";
+  const appID = "484ef14f";
+
+  const apiURL = `https://api.edamam.com/search?q=chicken&app_id=${appID}&app_key=${apiKEY}`;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <input type="text"></input>
+        <button type="submit"></button>
+      </form>
     </div>
   );
 }
