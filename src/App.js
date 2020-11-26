@@ -33,15 +33,18 @@ const handleSearch = e => {
 const handleSubmit = e => {
 e.preventDefault();
 setQuery(search)
+setSearch('');
 }
 
 
   return (
     <div className="App">
+      <h1>👩🏻‍🍳 Find your recipe!</h1>
       <form className= "search-form" onSubmit={handleSubmit}>
         <input className= "search-field" type="text" value={search} onChange={handleSearch}></input>
-        <button type="submit"> Search</button>
+        <button className="search-btn" type="submit">Go!</button>
       </form>
+      <div className="recipies">
       {recipies.map(recipe => (
       <RecipeCard
       key={recipe.recipe.label}
@@ -50,6 +53,7 @@ setQuery(search)
       ingredients={recipe.recipe.ingredients} 
         />
         ))}
+        </div>
     </div>
   );
 }
