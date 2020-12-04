@@ -30,3 +30,15 @@ li {
   text-transform: capitalize;
   text-align: center;
 }
+
+button {
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 1px solid #fa8102;
+  background-color: white;
+  color: #fa8102;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px auto;
+}
