@@ -12,7 +12,7 @@ const RecipeCard = ({name,image,ingredients}) => {
     
     return(
         <div className={style.recipe}>
-            <h1>{name}</h1>
+            <h3>{name}</h3>
             <img className={style.image} src={image} alt=""></img>
             <button className={style.button} onClick={displayFullRecipe}>Show recipe</button>
             {value === true ? (

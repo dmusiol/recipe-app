@@ -16,6 +16,15 @@ h1 {
   justify-content: center;
 }
 
+h3 {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 80%;
+}
+
 .search-form {
   min-height: 10vh;
   display: flex;

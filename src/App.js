@@ -8,7 +8,7 @@ import RecipeCard from "./RecipeCard";
 export default function App() {
   const [recipies, setRecipies] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState('chicken');
+  const [query, setQuery] = useState('strawberry');
 
   const API_KEY = "a2abe5efbdbff70e0fc6f6a43990df7d";
   const APP_ID = "484ef14f";
