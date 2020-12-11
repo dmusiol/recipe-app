@@ -8,7 +8,6 @@
   box-shadow: 0px 5px 20px #fac68f;
   align-items: center;
   width: 40%;
-  border: none;
   min-width: 280px;
 }
 
@@ -25,6 +24,13 @@
   padding: 10px;
   max-height: 200px;
   overflow: scroll;
+}
+
+.ingredientsBox {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ingredients {
@@ -44,4 +50,28 @@
   font-weight: 600;
   cursor: pointer;
   margin: 10px auto;
+}
+
+.button:hover {
+  border: 1px solid #ff6600;
+  color: #ff6600;
+}
+
+.button:active,
+.button:focus,
+.button:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #fa8102;
+  padding: 10px;
+}
+
+a:hover {
+  color: #ff6600;
+  font-weight: 600;
 }

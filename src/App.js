@@ -51,6 +51,7 @@ setSearch('');
       name={recipe.recipe.label}
       image={recipe.recipe.image}
       ingredients={recipe.recipe.ingredients} 
+      url={recipe.recipe.url}
         />
         ))}
         </div>

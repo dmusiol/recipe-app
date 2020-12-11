@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import style from "./recipe.module.css";
 import FullRecipeView from "./FullRecipeView";
 
-const RecipeCard = ({name,image,ingredients}) => {
-    const [value, setValue] = useState(false);
+const RecipeCard = ({name,image,ingredients,url}) => {
+    const [isActive, setActive] = useState("false");
 
     function displayFullRecipe(e) {
         e.preventDefault();
-        setValue(true);
+        setActive(!isActive);
     }
     
     return(
@@ -15,11 +15,9 @@ const RecipeCard = ({name,image,ingredients}) => {
             <h3>{name}</h3>
             <img className={style.image} src={image} alt=""></img>
             <button className={style.button} onClick={displayFullRecipe}>Show recipe</button>
-            {value === true ? (
-            <FullRecipeView ingredientList={ingredients}/>
-
-        ) : null
-            }
+           {!isActive ? (
+            <FullRecipeView ingredientList={ingredients} recipeURL={url}/>
+           ) : null }
         </div>
     );
 }
