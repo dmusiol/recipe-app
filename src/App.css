@@ -11,17 +11,24 @@ body {
 }
 
 header {
-  background-color: #f8d8c3ef;
+  background-image: url(./img/Page_cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   display: flex;
   align-items: center;
-  min-height: 100px;
-  flex-direction: row;
-  flex: wrap;
+  justify-content: flex-start;
+  box-shadow: 0px 5px 10px 0 rgb(182, 182, 182);
+  padding: 10px;
 }
 
-h1 {
+h2 {
   margin: 20px;
-  min-width: 300px;
+  color: black;
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
 }
 
 h3 {
@@ -35,7 +42,7 @@ h3 {
 
 .search-form {
   min-height: 10vh;
-  width: 450px;
+  width: 70%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -47,6 +54,11 @@ h3 {
   border-radius: 4px;
   padding: 12px;
   border: 1px solid rgb(194, 194, 194);
+}
+
+.search-field::placeholder {
+  color: grey;
+  opacity: 0.7;
 }
 
 .search-btn {
@@ -62,7 +74,6 @@ h3 {
 
 .search-btn:hover {
   cursor: pointer;
-  background-color: #ff6600ef;
 }
 
 .recipies {
@@ -74,13 +85,13 @@ h3 {
 }
 
 footer {
-  background-color: rgba(226, 226, 226, 0.986);
-  min-height: 200px;
+  background-color: #dcd2c8;
+  min-height: 150px;
   flex-shrink: 0;
 }
 
 .footer-component {
-  min-height: 200px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,5 +109,4 @@ footer {
 
 .coded-by a:hover {
   font-weight: 500;
-  color: #ff6e1a;
 }

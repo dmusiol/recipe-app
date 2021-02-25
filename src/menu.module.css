@@ -1,0 +1,44 @@
+.topMenu {
+  display: flex;
+}
+
+.name {
+  font-size: 18px;
+  text-align: left;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  flex: 1;
+  padding: 5px;
+  border-bottom: 1px solid #dcd2c8;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nameSH {
+  color: #e63600dc;
+}
+
+.buttons a {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+a:hover {
+  color: #e63600dc;
+  font-weight: 500;
+}
+
+.subscribe {
+  border: none;
+  background-color: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #e63600dc;
+  font-weight: 600;
+}

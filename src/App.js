@@ -3,6 +3,7 @@ import { useEffect, useState} from "react";
 import React from "react";
 import RecipeCard from "./RecipeCard";
 import Footer from "./Footer";
+import TopMenu from "./TopMenu";
 
 
 
@@ -40,11 +41,12 @@ setSearch('');
 
   return (
     <div className="App">
+      <TopMenu />
       <header>
-      <h1>👩🏻‍🍳 Find your recipe!</h1>
-      <form className= "search-form" onSubmit={handleSubmit}>
-        <input className= "search-field" type="text" value={search} onChange={handleSearch}></input>
-        <button className="search-btn" type="submit">Go!</button>
+      <h2>Find your recipe ➤</h2>
+      <form className= "search-form" onSubmit={handleSubmit}> 
+        <input className= "search-field" type="text" placeholder="Search for your recipe" value={search} onChange={handleSearch}></input>
+        <button className="search-btn" type="submit">Search</button>
       </form>
       </header>
       <div className="recipies">
