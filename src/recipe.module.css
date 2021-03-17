@@ -1,21 +1,20 @@
 .recipe {
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: white;
-  margin: 20px;
+  margin: 30px auto;
   box-shadow: 0px 5px 10px rgb(182, 182, 182);
   align-items: center;
-  width: 40%;
-  min-width: 280px;
+  width: 30%;
+  min-width: 260px;
 }
 
 .image {
-  border-radius: 50%;
-  box-shadow: 0 5px 10px rgb(163, 163, 163);
-  max-width: 250px;
-  max-height: 250px;
+  padding: 5px;
+  border: 1px solid rgb(182, 182, 182);
+  max-width: 350px;
+  max-height: 200px;
   margin: 10px auto;
 }
 
@@ -41,20 +40,20 @@
 }
 
 .button {
-  padding: 12px 20px;
-  border-radius: 4px;
-  border: 1px solid #fa8102;
+  padding: 10px 16px;
+  border: 1px solid #e63600dc;
   background-color: white;
-  color: #fa8102;
-  font-size: 14px;
+  color: #e63600dc;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .button:hover {
-  border: 1px solid #ff6600;
-  color: #ff6600;
+  border: 1px solid #e63600dc;
+  color: white;
+  background-color: #e63600dc;
 }
 
 .button:active,
