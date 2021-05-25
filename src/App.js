@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+
 export default function App() {
   const [recipies, setRecipies] = useState([]);
   const [search, setSearch] = useState("");
@@ -45,8 +46,7 @@ setSearch('');
       <TopMenu />
       <header>
       <form className= "search-form" onSubmit={handleSubmit}> 
-        <input className= "search-field" type="text" placeholder="Search for your recipe" value={search} onChange={handleSearch}></input>
-        <button className="search-btn" type="submit">Search</button>
+        <input className= "search-field" type="text" placeholder="Search recipes and more..." value={search} onChange={handleSearch}></input>
       </form>
       </header>
       <div className="recipes">

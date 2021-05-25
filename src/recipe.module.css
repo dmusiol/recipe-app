@@ -1,5 +1,7 @@
 .h3 {
-  font-size: 22px;
+  font-size: 18px;
+  padding: 10px 10px 0 10px;
+  color: rgba(0, 0, 0, 0.781);
 }
 
 .recipe {
@@ -15,11 +17,10 @@
 }
 
 .image {
-  padding: 5px;
-  border: 1px solid rgb(182, 182, 182);
+  margin: 5px auto;
   max-width: 350px;
-  max-height: 200px;
-  margin: 10px auto;
+  max-height: 220px;
+  padding: 5px;
 }
 
 .unordList {

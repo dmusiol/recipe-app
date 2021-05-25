@@ -12,8 +12,8 @@ const RecipeCard = ({name,image,ingredients,url}) => {
     
     return(
         <div className={style.recipe}>
-            <h3 className={style.h3}>{name}</h3>
             <img className={style.image} src={image} alt=""></img>
+            <h3 className={style.h3}>{name}</h3>
             <button className={style.button} onClick={displayFullRecipe}>Show recipe</button>
            {!isActive ? (
             <FullRecipeView ingredientList={ingredients} recipeURL={url}/>
