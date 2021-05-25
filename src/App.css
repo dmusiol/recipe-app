@@ -14,6 +14,19 @@ body {
   flex-direction: column;
 }
 
+.brand-name {
+  color: var(--links-color);
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.692) !important;
+  font-size: 1.2vw;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+}
+
 header {
   background-image: url(./img/Page_cover.jpg);
   background-position: center;
@@ -89,7 +102,7 @@ h3 {
 }
 
 footer {
-  background-color: #dcd2c8;
+  background-color: #e7e7e9;
   min-height: 150px;
   flex-shrink: 0;
 }
@@ -107,7 +120,7 @@ footer h3 {
   justify-content: space-evenly;
 }
 .coded-by {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .coded-by a {
@@ -118,10 +131,27 @@ footer h3 {
 
 .coded-by a:hover {
   font-weight: 500;
+  color: #cf330c !important;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
   h2 {
     font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-btn {
+    display: none;
+  }
+
+  .search-field {
+    width: 80%;
+    padding: 8px;
   }
 }

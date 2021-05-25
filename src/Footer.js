@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
         <div className="footer-component">
-             <div className="coded-by">Created by
+             <div className="coded-by">Created by 
           <a href="https://github.com/dmusiol"> Dominika Musioł</a></div>
           <small className ="social-media">
             <h3>Social media</h3>
