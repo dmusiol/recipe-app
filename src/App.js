@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
   const [recipies, setRecipies] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('Spanish tortilla');
 
   const API_KEY = "a2abe5efbdbff70e0fc6f6a43990df7d";
   const APP_ID = "484ef14f";
