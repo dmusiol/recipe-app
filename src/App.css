@@ -1,5 +1,6 @@
 :root {
-  --links-color: #e63600dc;
+  --links-color: #ff5f6c;
+  --secondary-background: #eeeeee;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .brand-name {
-  color: var(--links-color);
+  color: #ff5f6c;
 }
 
 .nav-link {
@@ -28,7 +29,7 @@ body {
 }
 
 header {
-  background-image: url(./img/Page_cover.jpg);
+  background: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,7 +88,7 @@ h3 {
 }
 
 footer {
-  background-color: #e7e7e9;
+  background-color: var(--secondary-background);
   min-height: 150px;
   flex-shrink: 0;
 }
@@ -95,6 +96,7 @@ footer {
 footer h3 {
   font-size: 18px;
   padding: 10px 0;
+  font-weight: 400;
 }
 
 .footer-component {
@@ -109,14 +111,14 @@ footer h3 {
 }
 
 .coded-by a {
-  color: #ea502a;
+  color: #ff5f6c;
   padding: 0;
   font-weight: 500;
 }
 
 .coded-by a:hover {
   font-weight: 500;
-  color: #cf330c !important;
+  color: var(--links-color) !important;
   text-decoration: none;
 }
 

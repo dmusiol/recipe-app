@@ -1,19 +1,14 @@
 .h3 {
   font-size: 18px;
-  padding: 10px 10px 0 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: rgba(0, 0, 0, 0.781);
 }
 
 .recipe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: white;
-  margin: 30px auto;
-  box-shadow: 0px 5px 10px rgb(182, 182, 182);
-  align-items: center;
-  width: 30%;
-  min-width: 260px;
+  margin: 20px auto;
 }
 
 .image {
@@ -42,17 +37,6 @@
   letter-spacing: 1.5;
   text-transform: capitalize;
   text-align: center;
-}
-
-.button {
-  padding: 10px 16px;
-  border: 1px solid var(--links-color);
-  background-color: white;
-  color: var(--links-color);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  margin: 20px auto;
 }
 
 .button:hover {
