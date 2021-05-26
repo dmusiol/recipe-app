@@ -1,6 +1,5 @@
 .h3 {
   font-size: 18px;
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -18,25 +17,12 @@
   padding: 5px;
 }
 
-.unordList {
-  list-style: none;
-  padding: 10px;
-  max-height: 200px;
-  overflow: scroll;
-}
-
-.ingredientsBox {
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .ingredients {
-  padding: 5px;
-  letter-spacing: 1.5;
-  text-transform: capitalize;
-  text-align: center;
+  padding: 0;
+  letter-spacing: 1;
+  text-align: left;
+  height: 120px;
+  overflow: scroll;
 }
 
 .button:hover {
@@ -50,6 +36,12 @@
 .button:active:focus:not(:disabled):not(.disabled) {
   box-shadow: none !important;
   outline: 0;
+}
+
+span {
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 1.5;
 }
 
 a {
