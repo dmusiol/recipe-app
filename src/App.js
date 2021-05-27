@@ -51,7 +51,7 @@ setSearch('');
       </form>
       </header>
       <div className="recipes">
-      {recipies.map(recipe => (
+      {recipies.slice(0, 8).map(recipe => (
       <RecipeCard
       key={recipe.recipe.uri}
       name={recipe.recipe.label}

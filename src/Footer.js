@@ -1,24 +1,30 @@
 import React from "react";
+import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa';
+import {CgInstagram} from 'react-icons/cg';
 
 
 export default function Footer() {
 
     return (
         <div className="footer-component">
-             <div className="coded-by">Created by 
-          <a href="https://github.com/dmusiol"> Dominika Musioł</a></div>
+             <div className="coded-by">Designed and built by Dominika Musioł. Open source on  
+          <a href="https://github.com/dmusiol"> GitHub</a>.</div>
           <small className ="social-media">
-            <h3>Social media</h3>
             <a href="https://www.linkedin.com/in/dominika-musio%C5%82/">
-              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/000/729/original/linkedin.png?1587980661" alt="LinkedIn" width="35px"></img>
+              <FaLinkedin className="sm-icon"/>
             </a>
             <a href="https://www.facebook.com/dominikabm/">
-              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/000/727/original/facebook.png?1587980079" alt="Facebook" width="35px"></img>
+              <FaFacebookSquare className="sm-icon"/>
             </a>
             <a href="https://www.instagram.com/bydomi07/">
-              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/000/728/original/instagram.png?1587980326" alt="Instagram" width="35px"></img>
+              <CgInstagram className="sm-icon"/>
             </a>
           </small>
+          <div className="other-work">
+            <a href="https://www.dominikamusiol.com/">Frontend Portfolio</a>
+            <a href="mailto:dominikamusiol07@gmail.com">Contact</a>
+            <a href="https://www.dominikamusiol.com/#projects">My work</a>
+          </div>
         </div>
     )
 }
