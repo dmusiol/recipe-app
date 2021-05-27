@@ -148,4 +148,8 @@ footer h3 {
     width: 80%;
     padding: 8px;
   }
+
+  .recipes {
+    margin: 10px 0;
+  }
 }
