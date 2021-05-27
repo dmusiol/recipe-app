@@ -5,6 +5,7 @@ import RecipeCard from "./RecipeCard";
 import Footer from "./Footer";
 import TopMenu from "./TopMenu"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BsSearch} from 'react-icons/bs';
 
 
 
@@ -48,6 +49,7 @@ setSearch('');
       <header>
       <form className= "search-form" onSubmit={handleSubmit}> 
         <input className= "search-field" type="text" placeholder="Search recipes and more..." value={search} onChange={handleSearch}></input>
+        <button><BsSearch className="srch-btn"/></button>
       </form>
       </header>
       <div className="recipes">
