@@ -19,11 +19,13 @@ body {
 
 .brand-name {
   color: #ff5f6c;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .nav-link {
   color: rgba(0, 0, 0, 0.692) !important;
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -159,12 +161,24 @@ footer h3 {
 }
 
 @media (max-width: 480px) {
+  button {
+    padding: 0;
+  }
+
   .search-field {
-    width: 80%;
+    width: 70%;
     padding: 8px;
   }
 
   .recipes {
     margin: 10px 0;
+  }
+  .coded-by {
+    font-size: 14px;
+    text-align: center;
+  }
+  .coded-by a {
+    color: rgba(0, 0, 0, 0.877);
+    text-decoration: underline;
   }
 }

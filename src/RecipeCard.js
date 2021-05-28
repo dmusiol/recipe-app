@@ -18,12 +18,15 @@ const RecipeCard = ({name,image,url,calories,ingredients}) => {
         <Card.Img variant="top" src={image} className={style.image} />
         <Card.Body>
             <Card.Title className={style.h3}>{name}</Card.Title>
-            <Card.Text className={style.ingredients}>
-               <span>Calories:</span> {caloriesNum}
-               <br/>
-               <span>Ingredients:</span> {ingredients[0].text}, {ingredients[1].text}, {ingredients[2].text}
+            <Card.Text className={style.calories}>
+                <strong>Calories:</strong> {caloriesNum}
             </Card.Text>
-        <Button variant="danger" onClick={displayFullRecipe}>Full recipe</Button>
+            <Card.Text className={style.ingredients}>
+               <strong>Ingredients: </strong>∙{ingredients.slice(0, 3).map(ingredient => (
+                   <span key={ingredient.foodID}> {ingredient.text} ∙</span>
+               )) }
+           </Card.Text>
+        <Button variant="danger" onClick={displayFullRecipe} className="recipe-btn">Full recipe</Button>
         </Card.Body>
     </Card>
     );

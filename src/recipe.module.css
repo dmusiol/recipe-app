@@ -1,9 +1,10 @@
 .h3 {
-  font-size: 18px;
+  font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: rgba(0, 0, 0, 0.781);
+  color: rgb(58, 58, 58);
+  margin-bottom: 20px;
 }
 
 .recipe {
@@ -15,12 +16,18 @@
   padding: 10px;
 }
 
+.calories,
 .ingredients {
   padding: 0;
-  letter-spacing: 1;
   text-align: left;
-  height: 120px;
   overflow: scroll;
+}
+.calories {
+  margin-bottom: 5px;
+}
+
+.ingredients {
+  height: 100px;
 }
 
 .button:hover {
@@ -36,10 +43,8 @@
   outline: 0;
 }
 
-span {
-  font-weight: 500;
-  text-decoration: underline;
-  line-height: 1.5;
+p.calories-p {
+  margin-bottom: 0 !important;
 }
 
 a {
@@ -51,6 +56,11 @@ a {
 a:hover {
   color: #ff6600;
   font-weight: 600;
+}
+
+span {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 @media (max-width: 480px) {
