@@ -19,7 +19,7 @@ const RecipeCard = ({name,image,url,calories,ingredients}) => {
         <Card.Body>
             <Card.Title className={style.h3}>{name}</Card.Title>
             <Card.Text className={style.calories}>
-                <strong>Calories:</strong> {caloriesNum}
+                <strong>Calories:</strong> {caloriesNum} kcals
             </Card.Text>
             <Card.Text className={style.ingredients}>
                <strong>Ingredients: </strong>∙{ingredients.slice(0, 3).map(ingredient => (
