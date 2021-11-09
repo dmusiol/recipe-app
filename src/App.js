@@ -6,6 +6,8 @@ import Footer from "./Footer";
 import TopMenu from "./TopMenu"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BsSearch} from 'react-icons/bs';
+import {ReactComponent as Logo} from './img/main_logo.svg';
+
 
 
 
@@ -48,6 +50,7 @@ setSearch('');
       <TopMenu />
       <header>
       <form className= "search-form" onSubmit={handleSubmit}> 
+       <Logo width="150px" height= "100px" className= "head-img"/>
         <input className= "search-field" type="text" placeholder="Search recipes and more..." value={search} onChange={handleSearch}></input>
         <button><BsSearch className="srch-btn"/></button>
       </form>
